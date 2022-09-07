@@ -20,11 +20,11 @@ During the project, we divided our work among ourselves and we played our part v
 
 These are the technologies used in this project which are available below:
 
-#### Lumen5 (Original Website)
-#### Chakra UI (UI Styling Library)
-#### For Frontend : HTML5, CSS3, Javascript, JS6, ReactJS
-#### For database: Local storage
-#### For authentication: Masai Api Mocker
+ * Lumen5 (Original Website)
+ * Chakra UI (UI Styling Library)
+ * For Frontend : HTML5, CSS3, Javascript, JS6, ReactJS
+ * For database: Local storage
+ * For authentication: Masai Api Mocker
 
 # Functionalities we made:
 ## Landing Page :
@@ -61,8 +61,8 @@ After successful OTP confirmation, you will be directed to the success page and 
 ## Notes :
 All the images and links are used from the original website to get a better experience of the website. I have also included the Github link of our project for your reference.
 
-NetlifyLink : https://lumen5clone8888.netlify.app/
-Medium Blog Link : https://medium.com/@harshadajagtap199725/clone-of-lumen5-3e07d2ea3109
+* [Netlify Link](https://lumen5clone8888.netlify.app/)
+* [Medium Blog Link](https://medium.com/@harshadajagtap199725/clone-of-lumen5-3e07d2ea3109)
 
 I would say, thank you for reading this here. I hope you will find it helpful. I and my teammates completed this project with full enthusiasm, focus, and hard work. It may have some bugs, but we will try to fix them soon.
 
