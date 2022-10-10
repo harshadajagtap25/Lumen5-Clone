@@ -1,28 +1,17 @@
 import React from "react";
-import {useNavigate} from "react-router-dom"
-import {
-  Box,
-  Center,
-  Heading,
-  Stack,
-  Text,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
+import { Box, Heading, Stack, Text, useColorModeValue } from "@chakra-ui/react";
 import AllvideosCard from "./AllvideosCard";
 
 const Allvideos = () => {
-  const navigate=useNavigate()
+  const navigate = useNavigate();
   return (
     <div>
       <Heading fontSize="32px" fontWeight="500" textAlign="left" margin="20px">
         All Videos
       </Heading>
 
-      <Stack
-        direction="row"
-        gap="5px"
-        marginTop="50px"
-      >
+      <Stack direction="row" gap="5px" marginTop="50px">
         <hr style={{ backgroundColor: "#dddde6" }} />
         <Stack gap="20px" direction="row">
           <Box

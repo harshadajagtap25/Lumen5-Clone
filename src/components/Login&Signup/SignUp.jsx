@@ -1,10 +1,10 @@
-import { useRef, useState } from 'react';
+import { useRef, useState } from "react";
 import styles from "../Login&Signup/SignUp.module.css";
-import LoginSignup from "./LoginSignup.png"
-import { useDispatch } from 'react-redux';
-import { register } from '../../Redux/Action';
-import { useNavigate } from 'react-router-dom';
-import { REGISTER_SUCCESS } from '../../Redux/ActionType';
+import LoginSignup from "./LoginSignup.png";
+import { useDispatch } from "react-redux";
+import { register } from "../../Redux/Action";
+import { useNavigate } from "react-router-dom";
+import { REGISTER_SUCCESS } from "../../Redux/ActionType";
 //  import { Stack,Box,Button} from '@chakra-ui/react';
 
 export default function SignUp() {
@@ -12,45 +12,55 @@ export default function SignUp() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const [description, setdescription] = useState("")
+  const [description, setdescription] = useState("");
   const [toggleType, setToggleType] = useState(false);
-  const [mobile, setmobile] = useState("")
-  const dispatch = useDispatch()
-  const navigate = useNavigate()
+  const [mobile, setmobile] = useState("");
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const otp = useRef();
   const handleSignUp = () => {
-localStorage.setItem("name",email)
+    localStorage.setItem("name", email);
     let obj = {
       username: name,
       email: email,
       name: "aa",
       password: password,
       mobile: mobile,
-      description: "AsAAA"
-    }
+      description: "AsAAA",
+    };
     dispatch(register(obj)).then((r) => {
       if (r == REGISTER_SUCCESS) {
-        navigate("/auth/login")
+        navigate("/auth/login");
       }
-    })
-    console.log(obj)
+    });
+    console.log(obj);
   };
 
   return (
     <>
       <div style={{ display: "flex" }}>
-        <div className='first_image'>
+        <div className="first_image">
           <div className={styles.sidenav}>
             <div style={{ height: "125px" }}>
-              <img onClick={()=> navigate("/")}  src={LoginSignup} alt="" />
+              <img onClick={() => navigate("/")} src={LoginSignup} alt="" />
             </div>
-            <div className={styles.sidenavGrid}>
-            </div>
+            <div className={styles.sidenavGrid}></div>
           </div>
         </div>
-        <div className='second_image' style={{ width: "700px", padding: "50px", margin: "0px 100px 100px 160px", lineHeight: "38px", textAlign: "left" }}>
+        <div
+          className="second_image"
+          style={{
+            width: "700px",
+            padding: "50px",
+            margin: "0px 100px 100px 160px",
+            lineHeight: "38px",
+            textAlign: "left",
+          }}
+        >
           <div className={styles.afterSidenav}>
-            <div className={styles.heading}>Get started with a free account</div>
+            <div className={styles.heading}>
+              Get started with a free account
+            </div>
 
             <div className={styles.formData}>
               <div className={styles.name}>FIRST NAME</div>
@@ -58,7 +68,10 @@ localStorage.setItem("name",email)
               <div className={styles.name}>WORK EMAIL</div>
               <input value={name} onChange={(e) => setName(e.target.value)} />
               <div className={styles.name}>MOBILE NUMBER</div>
-              <input value={mobile} onChange={(e) => setmobile(e.target.value)} />
+              <input
+                value={mobile}
+                onChange={(e) => setmobile(e.target.value)}
+              />
               <div className={styles.passwordDivision}>
                 <div>PASSWORD</div>
                 <div
@@ -69,7 +82,10 @@ localStorage.setItem("name",email)
                   <div>{toggleType ? "Hide" : "Show"}</div>
                 </div>
               </div>
-              <input value={password} onChange={(e) => setPassword(e.target.value)} />
+              <input
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
             </div>
 
             {/* <div className={styles.afterPassword}>
@@ -104,7 +120,8 @@ localStorage.setItem("name",email)
               <div style={{ display: "flex" }}>
                 <button className={styles.button2}>
                   {/* <div><img style={{marginLeft:"200px"}}src="https://www.svgrepo.com/show/158427/facebook.svg" alt="facebook" /></div> */}
-                  Sign up with Facebook</button>
+                  Sign up with Facebook
+                </button>
               </div>
             </div>
 
@@ -125,15 +142,8 @@ localStorage.setItem("name",email)
               .
             </div>
           </div>
-
-
         </div>
-
       </div>
-
     </>
-
-
-  )
-
+  );
 }

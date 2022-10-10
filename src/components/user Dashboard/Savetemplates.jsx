@@ -1,5 +1,5 @@
-import React from 'react'
-import { Box,Text,Button} from '@chakra-ui/react'
+import React from "react";
+import { Box, Text, Button } from "@chakra-ui/react";
 
 const Savetemplates = () => {
   return (
@@ -24,10 +24,13 @@ const Savetemplates = () => {
         >
           New Saved Template
         </Button>
-        <img src="https://storage.googleapis.com/lumen5-site-images/empty-st.png" alt="" />
+        <img
+          src="https://storage.googleapis.com/lumen5-site-images/empty-st.png"
+          alt=""
+        />
       </Box>
     </div>
   );
-}
+};
 
-export default Savetemplates
+export default Savetemplates;

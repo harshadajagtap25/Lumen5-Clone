@@ -17,10 +17,8 @@ const BtnComponent = ({ label, sizeGiven, status }) => {
       return navigate("/payment");
     } else if (!isAuth) {
       navigate("/auth/signup");
-    }
-    else if(label==="Compare Plan")
-    {
-      navigate("/pricing")
+    } else if (label === "Compare Plan") {
+      navigate("/pricing");
     }
   };
   return (

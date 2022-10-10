@@ -1,9 +1,9 @@
-import { Heading,Text,Box,Button} from '@chakra-ui/react'
-import React from 'react'
+import { Heading, Text, Box, Button } from "@chakra-ui/react";
+import React from "react";
 
 const Brandkits = () => {
   return (
-    <div style={{paddingLeft:"30px",paddingTop:"20px"}}>
+    <div style={{ paddingLeft: "30px", paddingTop: "20px" }}>
       <Text fontSize="40px" textAlign="left">
         Brand Kits
       </Text>
@@ -36,6 +36,6 @@ const Brandkits = () => {
       </Box>
     </div>
   );
-}
+};
 
-export default Brandkits
+export default Brandkits;

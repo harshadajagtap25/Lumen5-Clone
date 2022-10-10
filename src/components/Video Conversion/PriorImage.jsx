@@ -7,10 +7,11 @@ import {
   DeleteIcon,
   DragHandleIcon,
 } from "@chakra-ui/icons";
+
 const PriorImage = () => {
   return (
     <Box pt="20px">
-      <Stack direction="row"  width="1200px" justifyContent="space-between">
+      <Stack direction="row" width="1200px" justifyContent="space-between">
         <Stack
           width="250px"
           _hover={{ backgroundColor: "gray.300" }}
@@ -114,21 +115,51 @@ const PriorImage = () => {
         </Stack>
       </Stack>
 
-      <Box fontSize="35px" display="flex" justifyContent="center" color="green.300" ml="-50px" mt="15px">
+      <Box
+        fontSize="35px"
+        display="flex"
+        justifyContent="center"
+        color="green.300"
+        ml="-50px"
+        mt="15px"
+      >
         <i className="fa-solid fa-circle-plus"></i>
       </Box>
 
-      <Box display="flex" flexDirection="column"  width="800px"  justifyContent="center" m="auto">
-      <Box fontSize="30px" color="gray.300" fontWeight="600">Outro</Box>
-    
-      <Box display="flex" alignContent="center" justifyContent="center"  pt="20px"  height="100px" border="3px grey" borderStyle="dashed">
-        <Box borderRadius="30px" backgroundColor="gray.300" width="140px" pt="10px" display="flex" alignContent="center" justifyContent="center" height="50px">
-          Show outro
+      <Box
+        display="flex"
+        flexDirection="column"
+        width="800px"
+        justifyContent="center"
+        m="auto"
+      >
+        <Box fontSize="30px" color="gray.300" fontWeight="600">
+          Outro
+        </Box>
+
+        <Box
+          display="flex"
+          alignContent="center"
+          justifyContent="center"
+          pt="20px"
+          height="100px"
+          border="3px grey"
+          borderStyle="dashed"
+        >
+          <Box
+            borderRadius="30px"
+            backgroundColor="gray.300"
+            width="140px"
+            pt="10px"
+            display="flex"
+            alignContent="center"
+            justifyContent="center"
+            height="50px"
+          >
+            Show outro
+          </Box>
         </Box>
       </Box>
-      </Box>
-
-
     </Box>
   );
 };

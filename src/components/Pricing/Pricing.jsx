@@ -38,7 +38,7 @@ const Pricing = () => {
     setBillMonthly(false);
     setBillYearly(true);
   };
-  
+
   return (
     <Box align="center" justify="center" mt={"150px"}>
       <Box maxW={"100%"}>

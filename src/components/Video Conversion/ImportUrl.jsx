@@ -35,22 +35,22 @@ const ImportUrl = ({ setimagePrior }) => {
             placeholder="Paste a URL to your blog/article"
             variant="flushed"
           />
-            <Button
-              _hover={{ color: "white", backgroundColor: "#1606ad" }}
-              backgroundColor="#5846f6"
-              fontSize="13px"
-              fontWeight="550"
-              color="white"
-              borderRadius="30px"
-              border="1px solid #5b4af6"
-              width="80px"
-              pr="8px"
-              onClick={HandleInport}
-              pl="8px"
-              disabled={inpValue.length==0}
-            >
-              IMPORT
-            </Button>
+          <Button
+            _hover={{ color: "white", backgroundColor: "#1606ad" }}
+            backgroundColor="#5846f6"
+            fontSize="13px"
+            fontWeight="550"
+            color="white"
+            borderRadius="30px"
+            border="1px solid #5b4af6"
+            width="80px"
+            pr="8px"
+            onClick={HandleInport}
+            pl="8px"
+            disabled={inpValue.length == 0}
+          >
+            IMPORT
+          </Button>
         </Stack>
 
         {boxChange ? <FilledboxCombine /> : <EmptyBox />}

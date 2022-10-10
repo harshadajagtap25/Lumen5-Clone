@@ -25,7 +25,11 @@ const Confirmation = () => {
                 alt="image to be enter"
               />
             </div>
-            <button style={{width:"90%",marginLeft:"220px"}} onClick={() => HandleStart()} className={style.checkbtn33}>
+            <button
+              style={{ width: "90%", marginLeft: "220px" }}
+              onClick={() => HandleStart()}
+              className={style.checkbtn33}
+            >
               Lets Start
             </button>
             <div className={style.confirmation3}>
@@ -35,7 +39,7 @@ const Confirmation = () => {
           <div>
             <div className={style.confirmation4}>⦾ Order Details : </div>
             <div className={style.confirmation5}>
-              ➼ Plan : {" "}
+              ➼ Plan :{" "}
               <u>
                 <i>Starter - v2 (Yearly)</i>
               </u>

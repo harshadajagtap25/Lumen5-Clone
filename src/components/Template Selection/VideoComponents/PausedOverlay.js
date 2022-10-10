@@ -1,6 +1,6 @@
 import { css } from "@emotion/css";
 
-const PausedOverlay = ({imgp}) => (
+const PausedOverlay = ({ imgp }) => (
   <div>
     <img
       src={imgp}
@@ -33,8 +33,7 @@ const PausedOverlay = ({imgp}) => (
           margin: 0 0.2em 0;
         }
       `}
-    >
-    </div>
+    ></div>
   </div>
 );
 

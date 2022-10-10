@@ -34,7 +34,11 @@ const EnterpriseNavbar = () => {
     <div>
       <nav
         className="navbar navbar-expand-lg fixed-top navbar-light header-container px-md-5"
-        style={{ backgroundColor: "#24282f",height:"80px",paddingTop:"-20px"}}
+        style={{
+          backgroundColor: "#24282f",
+          height: "80px",
+          paddingTop: "-20px",
+        }}
       >
         <div className="d-flex pl-md-4 ml-md-5">
           <Link to="/" className="navbar-brand d-flex align-items-center">

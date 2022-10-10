@@ -8,49 +8,55 @@ import Savetemplates from "./Savetemplates";
 import Analytics from "./Analytics";
 
 const UserDashSidebar = () => {
-    const [allvideos, setallvideos] = useState(false)
-    const [instantvideos, setinstantvideos] = useState(false)
-    const [brandkits, setbrandkits] = useState(false)
-    const [savetemplate, setsavetemplate] = useState(false)
-    const [analytics, setanalytics] = useState(false)
-   const handleallVideos=()=>{
+  const [allvideos, setallvideos] = useState(false);
+  const [instantvideos, setinstantvideos] = useState(false);
+  const [brandkits, setbrandkits] = useState(false);
+  const [savetemplate, setsavetemplate] = useState(false);
+  const [analytics, setanalytics] = useState(false);
+  const handleallVideos = () => {
     setallvideos(true);
     setinstantvideos(false);
     setbrandkits(false);
     setsavetemplate(false);
     setanalytics(false);
-   }
-   const handlealinstantvideos = () => {
-     setallvideos(false);
-     setinstantvideos(true);
-     setbrandkits(false);
-     setsavetemplate(false);
-     setanalytics(false);
-   };
-   const handlebrandkits=()=>{
+  };
+  const handlealinstantvideos = () => {
+    setallvideos(false);
+    setinstantvideos(true);
+    setbrandkits(false);
+    setsavetemplate(false);
+    setanalytics(false);
+  };
+  const handlebrandkits = () => {
     setallvideos(false);
     setinstantvideos(false);
     setbrandkits(true);
     setsavetemplate(false);
     setanalytics(false);
-   }
-   const handlesavedtemplate = () => {
-     setallvideos(false);
-     setinstantvideos(false);
-     setbrandkits(false);
-     setsavetemplate(true);
-     setanalytics(false);
-   };
-   const handleanalytics = () => {
-     setallvideos(false);
-     setinstantvideos(false);
-     setbrandkits(false);
-     setsavetemplate(false);
-     setanalytics(true);
-   };
+  };
+  const handlesavedtemplate = () => {
+    setallvideos(false);
+    setinstantvideos(false);
+    setbrandkits(false);
+    setsavetemplate(true);
+    setanalytics(false);
+  };
+  const handleanalytics = () => {
+    setallvideos(false);
+    setinstantvideos(false);
+    setbrandkits(false);
+    setsavetemplate(false);
+    setanalytics(true);
+  };
   return (
     <Stack direction="row">
-      <Box width="300px" height="100vh" pt="50px" border="1px solid #dddee6" lineHeight="55px">
+      <Box
+        width="300px"
+        height="100vh"
+        pt="50px"
+        border="1px solid #dddee6"
+        lineHeight="55px"
+      >
         <Stack pl="30px" direction="column" textAlign="left">
           <Link spy={true} activeClass="activeClass" to="Intro" smooth={true}>
             <Text

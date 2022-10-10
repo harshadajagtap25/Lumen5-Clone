@@ -11,9 +11,9 @@ import {
 } from "@chakra-ui/react";
 import { CheckIcon } from "@chakra-ui/icons";
 
-export  function AllvideosCard() {
+export function AllvideosCard() {
   return (
-    <Center >
+    <Center>
       <Box
         // maxW={"550px"}
         // w={"full"}
@@ -43,14 +43,18 @@ export  function AllvideosCard() {
             Hobby
           </Text>
           <Stack direction={"row"} align={"center"} justify={"center"}>
-            <img width="300px"  src="https://storage.googleapis.com/lumen5-site-images/Prev_Origin_v1b.png" alt="" />
+            <img
+              width="300px"
+              src="https://storage.googleapis.com/lumen5-site-images/Prev_Origin_v1b.png"
+              alt=""
+            />
           </Stack>
         </Stack>
 
         <Box bg={useColorModeValue("gray.50", "gray.900")} px={6} py={1}>
           <List spacing={1}>
             <ListItem fontSize="19px">
-              <ListIcon  as={CheckIcon} color="green.400" />
+              <ListIcon as={CheckIcon} color="green.400" />
               Untitled Videos
             </ListItem>
             <ListItem fontSize="19px">
@@ -88,4 +92,4 @@ export  function AllvideosCard() {
     </Center>
   );
 }
-export default AllvideosCard
+export default AllvideosCard;

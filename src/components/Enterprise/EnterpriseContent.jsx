@@ -14,19 +14,19 @@ import ExploreLumen from "./Content/ExploreLumen";
 
 const EnterpriseContent = () => {
   return (
-    <div >
+    <div>
       <EnterpriseNavbar />
       <Engaging />
-      <Bespoke/>
-      <ContentCreation/>
-      <ExploreLumen/>
-      <EnterpriseMaintain/>
-      <EnterpriseCustomer/>
-      <EnterpriseReview/>
-      <ExploreVideo/>
-      <Caraousel/>
-      <TipsTricks/>
-      <FooterLandingPage/>
+      <Bespoke />
+      <ContentCreation />
+      <ExploreLumen />
+      <EnterpriseMaintain />
+      <EnterpriseCustomer />
+      <EnterpriseReview />
+      <ExploreVideo />
+      <Caraousel />
+      <TipsTricks />
+      <FooterLandingPage />
     </div>
   );
 };
