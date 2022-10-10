@@ -25,13 +25,13 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-.afterSidenav {
+/* .afterSidenav { */
   /* margin-top: -660px; */
   /* width:30%; */
   /* margin-left: 31.7%;
     padding-left: 8.7%;
     padding-right: 16.5%; */
-}
+/* } */
 
 .heading {
   font-size: 37px;
